@@ -70,8 +70,9 @@ public class Player extends Entity{
 				x += speed;
 			}
 			
+			// alternate spriteNum (1 & 2) every 12 frames to create walking animation
 			spriteCounter++;
-			if(spriteCounter > 12) { // player image changes every 12 frames
+			if(spriteCounter > 12) {
 				if(spriteNum ==1) {
 					spriteNum = 2;
 				}
